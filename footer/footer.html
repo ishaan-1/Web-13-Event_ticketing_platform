@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer in all pages</title>
+    <style>
+        footer {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(to right, #00093c, #2d0b00);
+            color: #fff;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .footerlogo {
+            width: 120px;
+            filter: invert(100%);
+        }
+
+        .row {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .col {
+            flex-basis: 25%;
+            padding: 10px;
+
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 30px;
+        }
+
+        .col h3 {
+            width: fit-content;
+            margin-bottom: 40px;
+            position: relative;
+
+        }
+
+        .email-id {
+            width: fit-content;
+            border-bottom: 1px solid #ccc;
+            margin: 20px 0;
+
+        }
+        ul li{
+            list-style: none;
+            margin-bottom: 12px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+
+        }
+        
+        
+        .tag{
+            
+            justify-content: center;
+            padding: -6px;
+            width: 100%;
+          margin-left: 42%;
+          
+
+
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="foot.jpg" class="footerlogo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, maiores. Quibusdam, sed?</p>
+            </div>
+            <div class="col">
+                <h3>
+                    Office
+                </h3>
+                <p>IIT Indore</p>
+                <p>Simrol Indore(M.P)</p>
+                <p>PIN: 324005 , INDIA</p>
+                <p class="email-id">Events@gmail.com</p>
+                <h4>+91-0123456789</h4>
+            </div>
+            <div class="col">
+                <h3>
+                    Links
+                </h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <hr>
+        <h4 class="tag">
+            Events management @2023 - All Rights Reserved
+        </h4>
+        
+        </div>
+    </footer>
+</body>
+
+</html>
