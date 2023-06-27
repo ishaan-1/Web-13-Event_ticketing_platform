@@ -1,0 +1,41 @@
+.form-group{
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    
+}
+.form-control{
+    width:200px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 1px;
+    
+}
+h1{
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: white;
+    height:100px;
+    padding-top: 50px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+.save,.cancel{
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+
+}
+h3{
+    padding-left: 100px;
+    color: #00093c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-horizontal{
+    
+    text-align: center;
+}
