@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %} Home
+{% endblock title %}
+{% load static%}
+
+{% block body %}
+
+
+
+<div class="banner">
+  <div class="navbar">
+    <img src="{% static 'image/eventlogo.png' %}" class="logo">
+    <ul class="ho">
+
+      <li> <a href="#">Home</a></li>
+      <li> <a href="#">Events</a></li>
+      <li> <a href="#">Contact us</a></li>
+      <li> <a href="#">Tickets</a></li>
+
+    </ul>
+
+  </div>
+  <div class="content">
+    <h1>
+      EVENTS
+    </h1>
+
+    <div>
+      <button type="button" onclick="location.href='{% url 'auth' %}'">Book An Event</button>
+      <button type="button">Create an Event</button>
+    </div>
+    <hr>
+
+    <h2 class="after">Create immersive event experiences with ease
+      <br>
+      <div class="any"> Anyone, Anywhere, Anytime</div>
+    </h2>
+  </div>
+</div>
+
+
+
+<div class="maincontainer">
+  <h3 class="ff">MOST POPULAR EVENTS</h3>
+  <div class="mostpopularevents">
+    <div id="eventcontainer-1" class="eventcontainer">
+      <a href="#">
+        <img src="{% static 'image/fluxus.jpeg' %}">
+        <h4>FLUXUS</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam molestiae harum maiores.</p>
+      </a>
+    </div>
+
+    <div id="eventcontainer-2" class="eventcontainer">
+      <a href="#">
+        <img src="{% static 'image/hackhethon.jpeg' %}">
+        <h4>HACKHETHON</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas libero pariatur aut nulla!.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="selectgerne">
+    <h3>SELECT BY GERNE</h3>
+    <ul class="gerne">
+      <li id="gerne-1">
+        <a href="#"><img src="{%static 'image/concert.png' %}"> Concert</a>
+      </li>
+      <li id="gerne-2">
+        <a href="#"><img src="{% static 'image/workshop.png'%}">Workshops</a>
+      </li>
+      <li id="gerne-3">
+        <a href="#"><img src="{%static 'image/carnival1.jpg'%}">Carnivals</a>
+      </li>
+      <li id="gerne-4">
+        <a href="#"><img src="{% static 'image/food fest.png'%}">Food Festival</a>
+      </li>
+      <li id="gerne-5">
+        <a href="#"><img src="{% static 'image/job fair.png'%}">Job Fair</a>
+      </li>
+    </ul>
+  </div>
+
+  {% endblock body %}
+
+
+
+
+
+  </body>
+
+  </html>
