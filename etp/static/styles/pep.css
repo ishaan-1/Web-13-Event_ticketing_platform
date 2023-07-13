@@ -9,8 +9,8 @@
     height:fit-content;
     width: 340px;
     margin-top:20px;
-    margin-left: 80px;
-    margin-right: 20px;
+    margin-left: 100px;
+   
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     text-transform: capitalize;
@@ -24,7 +24,7 @@
 
 #guestblock{
     border-radius: 20px;
-    margin-right: 20px;
+    
     border:solid;
     padding-left: 3%;
     padding-right: 3%;
@@ -33,7 +33,7 @@
     font-size:medium ;
     height:fit-content;
     width   : 340px;
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 40px;
    
     font-family: Arial, Helvetica, sans-serif;
@@ -76,7 +76,7 @@ hr{
     
     border:solid;
    
-   margin-left:10px;
+   margin-right :50px;
    height: 40px;
    width: 130px;
    background: linear-gradient(to right,#00093c,#2d0b00);

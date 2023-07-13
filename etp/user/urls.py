@@ -7,4 +7,5 @@ urlpatterns = [
      path('profile/edit/',views.editprofile,name='editprofile'),
       path('profile/pep/',views.pep,name='pep'),
       path('profile/pep/cart',views.cart,name='cart'),
+      path('pep/',views.pep,name='pep'),
 ]

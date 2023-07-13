@@ -14,7 +14,7 @@
 
    
   </style>
-  
+{% for ticket in dets %} 
 <div class="container-fluid">
   <div class="d-lg-flex">
            <div class="row" id="thumbnail">
@@ -23,11 +23,11 @@
      <div class="row"> 
      
            <div class="col-auto" id="mainblock">
-               <h1 id="head">MAIN HEADING   </h1><!--add word limit of 20 words-->
-    <img src="{% static 'images/location.jpeg' %}"width=40px height=35px > IIT INDORE<br>
-    <img src="{%static 'images/cal.jpeg' %}"width=40px height=40px >22 JUNE 2023<br>
-    <img src="{%static 'images/CLOCK.jpeg'%}"width=40px height=40px >6:00 PM <br>
-    <img src="{%static 'images/wallet.jpeg'%}"width=60px height=60px >Rs.1000/-   <button type="button" id="buynow"class="btn btn" onclick="location.href='{% url 'cart' %}'">BUY NOW</button>
+               <h1 id="head">{{ticket.eventDisplay}}</h1><!--add word limit of 20 words-->
+    <img src="{% static 'images/location.jpeg' %}"width=40px height=35px > {{ticket.eventAddress}},{{ticket.eventCity}}<br>
+    <img src="{%static 'images/cal.jpeg' %}"width=40px height=40px >{{ticket.eventStartDate}} TO {{ticket.eventEndDate}}<br>
+    <img src="{%static 'images/CLOCK.jpeg'%}"width=40px height=40px >{{ticket.eventStartDate}} <br>
+    <img src="{%static 'images/wallet.jpeg'%}"width=60px height=60px >   <button type="button" id="buynow"class="btn btn" onclick="location.href='{% url 'cart' %}'">BUY NOW</button>
                   
            </div>
 
@@ -49,11 +49,7 @@
    <strong>ABOUT</strong> <br>
     <hr>
     <div id="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto perspiciatis pariatur dignissimos possimus, quae amet doloribus consequatur quas excepturi ipsam non et neque repellat ratione beatae? Necessitatibus, explicabo iure!</p>
-        <p>Nam iure repellendus neque optio alias quasi iste placeat nulla ex eveniet, labore illum modi praesentium voluptatum eaque distinctio corporis natus quisquam fugiat dolore! Exercitationem quasi ut optio nemo fugiat!</p>
-        <p>Possimus nobis illo voluptate amet rem ipsa tempore, aliquid dolor ratione facere fugit repellendus? Minima error adipisci facere consectetur sed! Ratione distinctio officia fuga. Excepturi quae architecto quisquam. Doloremque, ea.</p>
-        <p>Aperiam officia voluptatibus, adipisci dolorem laboriosam a odit voluptas, suscipit officiis autem error fugit accusantium odio deleniti recusandae. Tempora in ullam illo, consectetur quisquam nostrum odio repudiandae nemo dolore amet.</p>
-         perspiciatis quibusdam, atque, hic culpa cum ad reprehenderit magni alias. Dolorem, debitis vero quisquam porro repudiandae dolore eaque vitae aspernatur distinctio? Libero?</p>
+      {{ticket.eventDescription}}
     </div>
 </div>
 
@@ -88,13 +84,11 @@
 <div id="ogdets">
   <strong>ORGANIZER DETAILS</strong><br>
     <hr>
-    <div id="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto perspiciatis pariatur dignissimos possimus, quae amet doloribus consequatur quas excepturi ipsam non et neque repellat ratione beatae? Necessitatibus, explicabo iure!</p>
-        <p>Nam iure repellendus neque optio alias quasi is met consectetur adipisicing elit. Ducimus iusto perspiciatis pariatur dignissimos possimus, quae amet doloribus consequatur quas excepturi ipsam non et neque repellat ratione beatae? Necessitatibus, explicabo iure!</p>
-        <p>Nam iure repellendus neque optio alias quasi iste placeat nulla ex eveniet, labore illum modi praesentium voluptatum eaque distinctio corporis natus quisquam fugiat dolore! Exercitationem quasi ut optio nemo fugiat!</p>
-        <p>Possimus nobis illo voluptate amet rem ipsa tempore, aliquid dolor ratione facere fugit repellendus? Minima error adipisci facere consectetur sed! Ratione distinctio officia fuga. Excepturi quae architecto quisquam. Doloremque, ea.</p>
-        <p>Aperiam officia voluptatibus, adipisci dolorem laboriosam a odit voluptas, suscipit officiis autem error fugit accusantium odio deleniti recusandae. Tempora in ullam illo, consectetur quisquam nostrum odio repudiandae nemo dolore amet.</p>
-         perspiciatis quibusdam, atque, hic culpa cum</div>
+    <div id="content">
+      {{ticket.eventDescription}}
+    </div>
 </div>
+{% endfor %}
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
